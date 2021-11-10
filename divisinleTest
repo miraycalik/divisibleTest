@@ -1,0 +1,26 @@
+// This program shows that the number -which is obtained from the user- is divisible by 3, 2, or both of them.
+
+import java.util.Scanner;
+public class divisibleTest {
+
+	public static void main(String[] args) {
+		// Create a Scanner
+		Scanner input = new Scanner(System.in);
+		System.out.println("Please enter a number in integer: ");
+		
+		// Receive an input
+		int number = input.nextInt();
+		
+		if (number % 2 == 0 && number % 3 == 0)
+			System.out.println(number + " is divisible by 2 and 3.");
+		
+		if (number % 2 == 0 || number % 3 == 0)
+			System.out.println(number + " is divisible by 2 or 3.");
+		
+		if (number % 2 == 0 ^ number % 3 == 0)
+			System.out.println(number + " is divisible by 2 or 3, but not both.");
+		
+
+	}
+
+}
